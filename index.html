@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción Junta Cívica Pro Cantonizacion Valle del Ilaló</title>
+    <style>
+        body { font-family: sans-serif; background-color: #f4f4f4; padding: 20px; }
+        .container { max-width: 500px; background: white; padding: 25px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin: auto; }
+        h2 { color: #2c3e50; text-align: center; }
+        label { display: block; margin-top: 10px; font-weight: bold; }
+        input, select { width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; }
+        button { width: 100%; background: #27ae60; color: white; border: none; padding: 12px; margin-top: 20px; border-radius: 5px; cursor: pointer; font-size: 16px; }
+        button:hover { background: #219150; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Registro de Socio Activo</h2>
+    <p style="text-align: center; font-size: 0.9em;">Junta Cívica Pro Cantonización del Valle del Ilaló</p>
+    
+    <form action="https://formspree.io/f/TU_ID_AQUI" method="POST">
+        <label>Nombre Completo:</label>
+        <input type="text" name="nombre" required>
+
+        <label>Cédula de Identidad:</label>
+        <input type="text" name="cedula" required>
+
+        <label>Parroquia de Residencia:</label>
+        <select name="parroquia">
+            <option value="nayon">Nayón</option>
+            <option value="cumbaya">Cumbaya</option>
+            <option value="tumbaco">Tumbaco</option>
+            <option value="puembo">Puembo</option>
+	    <option value="pifo">Pifo</option>
+	    <option value="tababela">Tababela</option>
+	    <option value="yaruqui">Yaruqui</option>
+	    <option value="checa">Checa</option>
+	    <option value="el_quinche">El Qiunche</option>
+        </select>
+
+        <label>Correo Electrónico:</label>
+        <input type="email" name="_replyto" required>
+
+        <label>Número de WhatsApp:</label>
+        <input type="tel" name="telefono" required>
+
+        <button type="submit">Enviar Inscripción</button>
+    </form>
+</div>
+
+</body>
+</html>
+<label style="font-weight: normal; font-size: 0.85em;">
+    <input type="checkbox" name="terminos" required style="width: auto; margin-right: 10px;">
+    Declaro mi voluntad de adherirme a la Junta Cívica y autorizo el uso de mis datos para fines gremiales.
+</label>
